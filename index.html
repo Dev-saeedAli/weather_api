@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Javascript -->
+    <script src="app.js" defer></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="weather-search">
+            <span class="arrow active"><i class="fa-solid fa-arrow-left"></i></span>
+            <h3>Weather App</h3>
+        </div>
+        <hr>
+            <div class="weather-info ">
+                <div class="message active">User denied Geolocation</div>
+                <input type="text" id="searchInput" placeholder="Enter city name">
+                <div class="option">
+                    <span>-----------------------</span><small>or</small><span>-----------------------</span>
+                </div>
+                <button class="geolocation-btn">Get device location</button>
+            </div>
+            <div class="weather-details active">
+                <div class="weather-img">
+                    <img src="images/weather.png" alt="weather-forecast">
+                </div>
+                <h2>21<sup>o</sup>C</h2> 
+                <div class="location">
+                    <p>Moderate rain</p>
+                <i class="fa-solid fa-location-dot"></i><span>Surket, Nepal</span>
+                <hr>
+            </div>
+            <div class="current-condition">
+                    <div class="feels">
+                        <i class="fa-solid fa-temperature-quarter"></i><span>23<sup>o</sup>C</span>
+                        <div>feels like</div>
+                    </div>
+                    <span class="line">|</span>
+                    <div class="humidity">
+                        <i class="fa-solid fa-droplet"></i><span></span>
+                        <div>humidiity</div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
